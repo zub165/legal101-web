@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Rights - Legal Help for Citizens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="main-title">Know Your Rights</h1>
+            <p id="main-subtitle">Empowering citizens with legal knowledge for everyday situations</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-translate="nav_home">Home</a></li>
+                <li><a href="#travel" data-translate="nav_travel">Travel Rights</a></li>
+                <li><a href="#driving" data-translate="nav_driving">Driving Rights</a></li>
+                <li><a href="#police" data-translate="nav_police">Police Interactions</a></li>
+                <li><a href="#privacy" data-translate="nav_privacy">Privacy Rights</a></li>
+                <li><a href="#resources" data-translate="nav_resources">Resources</a></li>
+                <li><a href="#faq" data-translate="nav_faq">AI FAQ</a></li>
+                <li><a href="#settings" data-translate="nav_settings">Settings</a></li>
+            </ul>
+            
+            <div class="utility-controls">
+                <select class="theme-selector" id="themeSelector">
+                    <option value="default" data-translate="theme_light">Light Theme</option>
+                    <option value="dark" data-translate="theme_dark">Dark Theme</option>
+                    <option value="high-contrast" data-translate="theme_contrast">High Contrast</option>
+                    <option value="nature" data-translate="theme_nature">Nature Theme</option>
+                    <option value="ocean" data-translate="theme_ocean">Ocean Theme</option>
+                    <option value="sunset" data-translate="theme_sunset">Sunset Theme</option>
+                    <option value="accessible" data-translate="theme_accessible">Accessible Theme</option>
+                </select>
+                
+                <select class="language-selector" id="languageSelector">
+                    <option value="en" data-translate="lang_en">English</option>
+                    <option value="es" data-translate="lang_es">Español</option>
+                    <option value="fr" data-translate="lang_fr">Français</option>
+                    <option value="de" data-translate="lang_de">Deutsch</option>
+                    <option value="hi" data-translate="lang_hi">हिन्दी</option>
+                    <option value="ar" data-translate="lang_ar">العربية</option>
+                    <option value="zh" data-translate="lang_zh">中文</option>
+                    <option value="ru" data-translate="lang_ru">Русский</option>
+                    <option value="pt" data-translate="lang_pt">Português</option>
+                    <option value="ja" data-translate="lang_ja">日本語</option>
+                    <option value="ko" data-translate="lang_ko">한국어</option>
+                    <option value="it" data-translate="lang_it">Italiano</option>
+                    <option value="vi" data-translate="lang_vi">Tiếng Việt</option>
+                    <option value="tl" data-translate="lang_tl">Tagalog</option>
+                    <option value="fa" data-translate="lang_fa">فارسی</option>
+                    <option value="pl" data-translate="lang_pl">Polski</option>
+                    <option value="ur" data-translate="lang_ur">اردو</option>
+                    <option value="bn" data-translate="lang_bn">বাংলা</option>
+                    <option value="th" data-translate="lang_th">ไทย</option>
+                    <option value="tr" data-translate="lang_tr">Türkçe</option>
+                    <option value="he" data-translate="lang_he">עברית</option>
+                    <option value="nl" data-translate="lang_nl">Nederlands</option>
+                    <option value="sv" data-translate="lang_sv">Svenska</option>
+                    <option value="no" data-translate="lang_no">Norsk</option>
+                    <option value="fi" data-translate="lang_fi">Suomi</option>
+                    <option value="da" data-translate="lang_da">Dansk</option>
+                    <option value="hu" data-translate="lang_hu">Magyar</option>
+                    <option value="cs" data-translate="lang_cs">Čeština</option>
+                    <option value="el" data-translate="lang_el">Ελληνικά</option>
+                    <option value="ro" data-translate="lang_ro">Română</option>
+                    <option value="sk" data-translate="lang_sk">Slovenčina</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Your Rights Made Simple</h1>
+            <p id="hero-text">Learn how to protect yourself in common legal situations with clear, actionable information.</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for a legal situation (e.g., 'airport security', 'traffic stop')..." data-translate="search_placeholder">
+                <button id="search-button" data-translate="search_button">Search</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="situations" id="situations">
+        <div class="container">
+            <h2 class="section-title" id="situations-title" data-translate="situations_title">Common Situations</h2>
+            <div class="situation-cards">
+                <div class="card">
+                    <img src="assets/airport.jpg" alt="Airport Security">
+                    <div class="card-content">
+                        <h3 data-translate="card1_title">Airport Security & Travel</h3>
+                        <p data-translate="card1_text">Know your rights when going through TSA, dealing with immigration officers, and during international travel.</p>
+                        <a href="#travel" class="btn" data-translate="learn_more">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="assets/traffic-stop.jpg" alt="Traffic Stop">
+                    <div class="card-content">
+                        <h3 data-translate="card2_title">Traffic Stops & Driving</h3>
+                        <p data-translate="card2_text">What to do when pulled over, your rights during vehicle searches, and how to handle DUI checkpoints.</p>
+                        <a href="#driving" class="btn" data-translate="learn_more">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="assets/police-interaction.jpg" alt="Police Interaction">
+                    <div class="card-content">
+                        <h3 data-translate="card3_title">Police Interactions</h3>
+                        <p data-translate="card3_text">Your rights when questioned by police, during arrests, and how to file complaints if needed.</p>
+                        <a href="#police" class="btn" data-translate="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AI FAQ Section -->
+    <section class="ai-faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-translate="faq_title">AI Legal Assistant</h2>
+            <p class="text-center" data-translate="faq_subtitle">Get quick answers to common legal questions</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" data-translate="faq1_question">
+                        What should I do if I'm stopped by police while driving?
+                    </div>
+                    <div class="faq-answer" data-translate="faq1_answer">
+                        <p>When stopped by police while driving:</p>
+                        <ul>
+                            <li>Pull over safely and turn off your engine</li>
+                            <li>Keep your hands visible on the steering wheel</li>
+                            <li>Provide license, registration, and proof of insurance when asked</li>
+                            <li>You have the right to remain silent beyond identifying information</li>
+                            <li>You can refuse consent to a search of your vehicle</li>
+                            <li>If issued a ticket, don't argue - you can contest it later</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-translate="faq2_question">
+                        Can TSA search my phone at the airport?
+                    </div>
+                    <div class="faq-answer" data-translate="faq2_answer">
+                        <p>TSA's primary focus is security threats, not data. However:</p>
+                        <ul>
+                            <li>TSA generally doesn't search phone content without cause</li>
+                            <li>Border agents have more authority to search devices</li>
+                            <li>You can refuse to provide passwords, but devices might be detained</li>
+                            <li>Consider traveling with a clean device or backup your data</li>
+                            <li>You can request a supervisor if you feel rights are violated</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-translate="faq3_question">
+                        Do I have to answer police questions if I'm not under arrest?
+                    </div>
+                    <div class="faq-answer" data-translate="faq3_answer">
+                        <p>Your rights in police encounters:</p>
+                        <ul>
+                            <li>You have the right to remain silent in all situations</li>
+                            <li>You must provide identification if required by state law</li>
+                            <li>You can ask "Am I free to leave?" to determine if you're detained</li>
+                            <li>If not under arrest, you can politely refuse to answer questions</li>
+                            <li>Never lie to police, as that can be a crime</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-input">
+                <input type="text" id="faq-input" placeholder="Ask a legal question..." data-translate="faq_placeholder">
+                <button id="ask-button" data-translate="faq_button">Ask</button>
+            </div>
+            
+            <div id="ai-response" class="legal-doc" style="display: none; margin-top: 20px;">
+                <h3 id="ai-response-title">AI Response</h3>
+                <div id="ai-response-content"></div>
+            </div>
+            
+            <!-- External Resources Integration -->
+            <div class="external-resources" style="margin-top: 40px;">
+                <h3 data-translate="external_resources_title">External Legal Resources</h3>
+                <p data-translate="external_resources_subtitle">Our AI assistant is connected to these trusted legal sources</p>
+                
+                <div class="resource-list">
+                    <div class="resource-connection">
+                        <h4 data-translate="resource_case_law">Case Law Database</h4>
+                        <div class="connection-status">
+                            <span class="status-indicator connected"></span>
+                            <span data-translate="status_connected">Connected</span>
+                        </div>
+                        <p data-translate="resource_case_law_desc">Real-time access to federal and state court decisions</p>
+                    </div>
+                    
+                    <div class="resource-connection">
+                        <h4 data-translate="resource_legal_ai">Legal AI Service</h4>
+                        <div class="connection-status">
+                            <span class="status-indicator connected"></span>
+                            <span data-translate="status_connected">Connected</span>
+                        </div>
+                        <p data-translate="resource_legal_ai_desc">Specialized legal AI platform for complex questions</p>
+                    </div>
+                    
+                    <div class="resource-connection">
+                        <h4 data-translate="resource_jurisdiction">Jurisdiction Database</h4>
+                        <div class="connection-status">
+                            <span class="status-indicator disconnected"></span>
+                            <span data-translate="status_disconnected">Not Connected</span>
+                        </div>
+                        <p data-translate="resource_jurisdiction_desc">State and local legal information systems</p>
+                        <button class="btn btn-small" data-translate="connect_now">Connect Now</button>
+                    </div>
+                    
+                    <div class="resource-connection">
+                        <h4 data-translate="resource_expert">Expert Network</h4>
+                        <div class="connection-status">
+                            <span class="status-indicator disconnected"></span>
+                            <span data-translate="status_disconnected">Not Connected</span>
+                        </div>
+                        <p data-translate="resource_expert_desc">Volunteer legal experts for complex questions</p>
+                        <button class="btn btn-small" data-translate="connect_now">Connect Now</button>
+                    </div>
+                </div>
+                
+                <div class="emergency-resources">
+                    <h4 data-translate="emergency_resources">Emergency Resources</h4>
+                    <div class="emergency-resource-list">
+                        <a href="#" class="emergency-resource-item">
+                            <i class="resource-icon hotline-icon"></i>
+                            <span data-translate="legal_hotline">Legal Hotline</span>
+                        </a>
+                        <a href="#" class="emergency-resource-item">
+                            <i class="resource-icon attorney-icon"></i>
+                            <span data-translate="attorney_referral">Attorney Referral</span>
+                        </a>
+                        <a href="#" class="emergency-resource-item">
+                            <i class="resource-icon legal-aid-icon"></i>
+                            <span data-translate="legal_aid">Legal Aid</span>
+                        </a>
+                        <a href="#" class="emergency-resource-item">
+                            <i class="resource-icon report-icon"></i>
+                            <span data-translate="report_violation">Report Violation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW: Panel to display emergency resource info -->
+            <div id="emergency-info-panel" class="legal-doc info-panel" style="display: none; margin-top: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;">
+                 <!-- Content will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="emergency-section">
+        <div class="container">
+            <h2 id="emergency-title" data-translate="emergency_title">Need Immediate Legal Help?</h2>
+            <p id="emergency-text" data-translate="emergency_text">If you're currently in a situation where you believe your rights are being violated, contact legal assistance immediately.</p>
+            <a href="#" class="emergency-btn" id="emergency-button" data-translate="emergency_button">Emergency Legal Help</a>
+        </div>
+    </section>
+    
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-title" id="resources-title" data-translate="resources_title">Legal Resources</h2>
+            <div class="resource-list">
+                <div class="resource-item clickable-resource" data-resource-type="rights-cards">
+                    <h3 data-translate="resource1_title">Downloadable Rights Cards</h3>
+                    <p data-translate="resource1_text">Printable cards summarizing your rights in various situations to keep in your wallet or phone.</p>
+                </div>
+                
+                <div class="resource-item clickable-resource" data-resource-type="complaint-letters">
+                    <h3 data-translate="resource2_title">Sample Complaint Letters</h3>
+                    <p data-translate="resource2_text">Templates for filing complaints against authorities when your rights are violated.</p>
+                </div>
+                
+                <div class="resource-item clickable-resource" data-resource-type="state-laws">
+                    <h3 data-translate="resource3_title">State-Specific Laws</h3>
+                    <p data-translate="resource3_text">Detailed information about laws that vary by state regarding consent, recording, and more.</p>
+                </div>
+                
+                <div class="resource-item clickable-resource" data-resource-type="legal-aid-dir">
+                    <h3 data-translate="resource4_title">Legal Aid Directory</h3>
+                    <p data-translate="resource4_text">Find free or low-cost legal assistance in your area for various situations.</p>
+                </div>
+            </div>
+
+            <!-- NEW: Panel to display resource details -->
+            <div id="resource-info-panel" class="legal-doc info-panel" style="display: none; margin-top: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;">
+                 <!-- Content will be added here by JavaScript -->
+            </div>
+
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+    
+    <!-- Settings Section -->
+    <section id="settings" class="legal-doc">
+        <div class="container">
+            <h2 data-translate="settings_title">Settings & Configuration</h2>
+            
+            <div class="settings-container">
+                <!-- API Configuration -->
+                <div class="settings-group">
+                    <h3 data-translate="settings_api_title">Legal API Integration</h3>
+                    <div class="settings-controls">
+                        <div class="setting-item">
+                            <label for="apiProvider" data-translate="settings_api_provider">API Provider:</label>
+                            <select id="apiProvider" class="settings-select">
+                                <option value="default" data-translate="settings_api_default">Default Legal Service</option>
+                                <option value="openai" data-translate="settings_api_openai">OpenAI Service</option>
+                                <option value="lexisnexis" data-translate="settings_api_lexisnexis">LexisNexis Integration</option>
+                                <option value="westlaw" data-translate="settings_api_westlaw">Westlaw Integration</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="apiKey" data-translate="settings_api_key">API Key:</label>
+                            <input type="password" id="apiKey" class="settings-input" placeholder="Enter your API key">
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="apiCaching" data-translate="settings_api_caching">Response Caching:</label>
+                            <select id="apiCaching" class="settings-select">
+                                <option value="enabled" data-translate="settings_enabled">Enabled</option>
+                                <option value="disabled" data-translate="settings_disabled">Disabled</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="apiOfflineMode" data-translate="settings_api_offline">Offline Mode:</label>
+                            <select id="apiOfflineMode" class="settings-select">
+                                <option value="auto" data-translate="settings_auto">Automatic</option>
+                                <option value="always" data-translate="settings_always">Always</option>
+                                <option value="never" data-translate="settings_never">Never</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Theme Configuration -->
+                <div class="settings-group">
+                    <h3 data-translate="settings_theme_title">Theme Configuration</h3>
+                    <div class="settings-controls">
+                        <div class="setting-item">
+                            <label for="themeMode" data-translate="settings_theme_mode">Theme Mode:</label>
+                            <select id="themeMode" class="settings-select">
+                                <option value="default" data-translate="settings_theme_light">Light</option>
+                                <option value="dark" data-translate="settings_theme_dark">Dark</option>
+                                <option value="high-contrast" data-translate="settings_theme_contrast">High Contrast</option>
+                                <option value="auto" data-translate="settings_theme_auto">Auto (System)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="themeFontSize" data-translate="settings_theme_font_size">Font Size:</label>
+                            <select id="themeFontSize" class="settings-select">
+                                <option value="small" data-translate="settings_theme_small">Small</option>
+                                <option value="medium" selected data-translate="settings_theme_medium">Medium</option>
+                                <option value="large" data-translate="settings_theme_large">Large</option>
+                                <option value="x-large" data-translate="settings_theme_xlarge">Extra Large</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="themeAnimations" data-translate="settings_theme_animations">Animations:</label>
+                            <select id="themeAnimations" class="settings-select">
+                                <option value="enabled" data-translate="settings_enabled">Enabled</option>
+                                <option value="reduced" data-translate="settings_reduced">Reduced</option>
+                                <option value="disabled" data-translate="settings_disabled">Disabled</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="emergencyAppearance" data-translate="settings_theme_emergency">Emergency Mode Appearance:</label>
+                            <select id="emergencyAppearance" class="settings-select">
+                                <option value="standard" data-translate="settings_theme_standard">Standard</option>
+                                <option value="discreet" data-translate="settings_theme_discreet">Discreet</option>
+                                <option value="high-visibility" data-translate="settings_theme_high_visibility">High Visibility</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Language Configuration -->
+                <div class="settings-group">
+                    <h3 data-translate="settings_language_title">Language Settings</h3>
+                    <div class="settings-controls">
+                        <div class="setting-item">
+                            <label for="primaryLanguage" data-translate="settings_language_primary">Primary Language:</label>
+                            <select id="primaryLanguage" class="settings-select">
+                                <option value="en" data-translate="lang_en">English</option>
+                                <option value="es" data-translate="lang_es">Español</option>
+                                <option value="fr" data-translate="lang_fr">Français</option>
+                                <option value="de" data-translate="lang_de">Deutsch</option>
+                                <option value="hi" data-translate="lang_hi">हिन्दी</option>
+                                <option value="ar" data-translate="lang_ar">العربية</option>
+                                <option value="zh" data-translate="lang_zh">中文</option>
+                                <option value="ru" data-translate="lang_ru">Русский</option>
+                                <option value="pt" data-translate="lang_pt">Português</option>
+                                <option value="ja" data-translate="lang_ja">日本語</option>
+                                <option value="ko" data-translate="lang_ko">한국어</option>
+                                <option value="it" data-translate="lang_it">Italiano</option>
+                                <option value="vi" data-translate="lang_vi">Tiếng Việt</option>
+                                <option value="tl" data-translate="lang_tl">Tagalog</option>
+                                <option value="fa" data-translate="lang_fa">فارسی</option>
+                                <option value="pl" data-translate="lang_pl">Polski</option>
+                                <option value="ur" data-translate="lang_ur">اردو</option>
+                                <option value="bn" data-translate="lang_bn">বাংলা</option>
+                                <option value="th" data-translate="lang_th">ไทย</option>
+                                <option value="tr" data-translate="lang_tr">Türkçe</option>
+                                <option value="he" data-translate="lang_he">עברית</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="languageTerminology" data-translate="settings_language_terminology">Terminology Style:</label>
+                            <select id="languageTerminology" class="settings-select">
+                                <option value="formal" data-translate="settings_language_formal">Formal Legal</option>
+                                <option value="simple" selected data-translate="settings_language_simple">Simple Explanations</option>
+                                <option value="technical" data-translate="settings_language_technical">Technical</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="autoDetect" data-translate="settings_language_autodetect">Auto-Detect Language:</label>
+                            <select id="autoDetect" class="settings-select">
+                                <option value="enabled" data-translate="settings_enabled">Enabled</option>
+                                <option value="disabled" data-translate="settings_disabled">Disabled</option>
+                            </select>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label for="voiceLanguage" data-translate="settings_language_voice">Voice Recognition Language:</label>
+                            <select id="voiceLanguage" class="settings-select">
+                                <option value="same" data-translate="settings_language_same_as_display">Same as Display</option>
+                                <option value="en" data-translate="lang_en">English</option>
+                                <option value="es" data-translate="lang_es">Español</option>
+                                <option value="fr" data-translate="lang_fr">Français</option>
+                                <option value="de" data-translate="lang_de">Deutsch</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button id="saveSettings" class="btn" data-translate="settings_save">Save Settings</button>
+                    <button id="resetSettings" class="btn btn-secondary" data-translate="settings_reset">Reset to Defaults</button>
+                </div>
+            </div>
+            
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+    
+    <!-- Detailed Legal Information Sections (same as before, with translation attributes added) -->
+    <section id="travel" class="legal-doc">
+        <div class="container">
+            <h2 data-translate="travel_title">Travel Rights at Airports and Borders</h2>
+            
+            <h3 data-translate="travel_tsa">TSA Security Checkpoints</h3>
+            <ul>
+                <li data-translate="travel_tsa1">You have the right to refuse a full-body scan and opt for a pat-down instead</li>
+                <li data-translate="travel_tsa2">TSA cannot detain you without reasonable suspicion</li>
+                <li data-translate="travel_tsa3">You can request a private screening if you're uncomfortable with the public process</li>
+                <li data-translate="travel_tsa4">TSA cannot search the contents of your phone or laptop without a warrant</li>
+            </ul>
+            
+            <!-- Other travel sections with translation attributes -->
+            
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+    
+    <!-- Driving Rights Section -->
+    <section id="driving" class="legal-doc">
+        <div class="container">
+            <h2 data-translate="driving_title">Your Rights When Driving</h2>
+            
+            <h3 data-translate="driving_traffic_stop_header">During a Traffic Stop:</h3>
+            <ul data-translate="driving_traffic_stop_list">
+                <li>Stay calm and keep your hands visible (e.g., on the steering wheel).</li>
+                <li>If it's dark, turn on your inside car light.</li>
+                <li>Tell the officer before you reach for your license, registration, or insurance.</li>
+                <li>Give the officer these documents if they ask for them.</li>
+                <li>You generally have the right to remain silent and not answer questions beyond providing your documents.</li>
+            </ul>
+
+            <h3 data-translate="driving_search_header">Vehicle Searches:</h3>
+            <ul data-translate="driving_search_list">
+                <li>Police usually need a warrant, your permission (consent), or a strong reason (probable cause) to search your car.</li>
+                <li>You have the right to say NO to a search. Clearly state: "I do not consent to a search."</li>
+                <li>Saying no isn't an admission of guilt.</li>
+            </ul>
+            
+            <h3 data-translate="driving_dui_header">DUI Checkpoints/Stops:</h3>
+            <ul data-translate="driving_dui_list">
+                <li>Field sobriety tests (like walking a line) are often voluntary. You can usually refuse these.</li>
+                <li>Refusing a breathalyzer or blood test might lead to penalties like license suspension, even if you aren't charged with DUI (laws vary by state).</li>
+                <li>You still have the right to remain silent.</li>
+            </ul>
+
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+
+    <!-- Police Interactions Section -->
+    <section id="police" class="legal-doc">
+        <div class="container">
+            <h2 data-translate="police_title">Interacting with Police</h2>
+
+            <h3 data-translate="police_questioning_header">If Police Question You:</h3>
+            <ul data-translate="police_questioning_list">
+                <li>You have the right to remain silent (5th Amendment). You don't have to answer questions about where you're going, what you're doing, or anything else.</li>
+                <li>You can say: "I am exercising my right to remain silent."</li>
+                <li>In some states ('Stop and Identify' states), you might have to give your name if police suspect you of a crime.</li>
+                <li>Ask "Am I free to leave?". If they say yes, you can calmly walk away.</li>
+                <li>Never lie to the police.</li>
+            </ul>
+
+            <h3 data-translate="police_arrest_header">If You Are Arrested:</h3>
+            <ul data-translate="police_arrest_list">
+                <li>Do not resist the arrest, even if you feel it's unfair.</li>
+                <li>Say clearly: "I wish to remain silent and I want a lawyer."</li>
+                <li>Do not say anything else, sign anything, or make any decisions without a lawyer present.</li>
+                <li>You usually have the right to make a local phone call.</li>
+            </ul>
+
+            <h3 data-translate="police_recording_header">Recording Police:</h3>
+            <ul data-translate="police_recording_list">
+                <li>In most public places, you generally have the right to record police officers (video and audio) as long as you don't interfere with their duties.</li>
+                <li>Laws can vary, so be aware of your local rules.</li>
+            </ul>
+            
+            <h3 data-translate="police_complaints_header">Filing Complaints:</h3>
+             <p data-translate="police_complaints_text">If you believe your rights were violated, you can file a complaint against the officer(s) involved. You can usually do this through the police department's internal affairs division or a civilian oversight board. Gather details like officer names, badge numbers, patrol car numbers, witness information, and specific events.</p>
+
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+
+    <!-- Privacy Rights Section -->
+    <section id="privacy" class="legal-doc">
+        <div class="container">
+            <h2 data-translate="privacy_title">Your Privacy Rights</h2>
+
+            <h3 data-translate="privacy_search_header">Protection from Searches (4th Amendment):</h3>
+            <ul data-translate="privacy_search_list">
+                <li>Your body, home, car, and belongings are generally protected from unreasonable searches by the government.</li>
+                <li>Police usually need a warrant based on probable cause to search your home.</li>
+                <li>There are exceptions (like emergencies or if evidence is in plain view), but you generally don't have to let police into your home without a warrant.</li>
+                <li>You can refuse to consent to a search of your property or person.</li>
+            </ul>
+
+            <h3 data-translate="privacy_devices_header">Your Digital Devices (Phones, Laptops):</h3>
+            <ul data-translate="privacy_devices_list">
+                <li>Police generally need a warrant to search the data on your phone or computer, even if you are arrested (Riley v. California).</li>
+                <li>At the border (including airports for international travel), rules are different, and agents have more power to search devices. You can refuse to give passwords, but your device might be detained.</li>
+                <li>Consider using strong passwords and encryption.</li>
+            </ul>
+
+             <h3 data-translate="privacy_info_header">Protecting Your Information:</h3>
+            <ul data-translate="privacy_info_list">
+                <li>Be mindful of what personal information you share.</li>
+                <li>You have the right to remain silent to protect yourself from self-incrimination (5th Amendment).</li>
+            </ul>
+
+            <a href="#" class="back-btn" data-translate="back_top">Back to Top</a>
+        </div>
+    </section>
+
+    <!-- Other legal doc sections (driving, police, privacy) would follow same pattern -->
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" data-translate="footer_about">About Us</a>
+                <a href="#" data-translate="footer_disclaimer">Disclaimer</a>
+                <a href="#" data-translate="footer_contact">Contact</a>
+                <a href="#" data-translate="footer_volunteer">Volunteer</a>
+                <a href="#" data-translate="footer_donate">Donate</a>
+            </div>
+            
+            <div class="donation-container">
+                <p class="donation-text" data-translate="footer_donation_text">Support our mission to protect citizens' rights:</p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top" class="donation-form">
+                    <input type="hidden" name="business" value="WRZ8DYSUSX6PU" />
+                    <input type="hidden" name="no_recurring" value="0" />
+                    <input type="hidden" name="item_name" value="For The people to Protect Rights" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+            
+            <p class="copyright" data-translate="footer_disclaimer_text">This information is not legal advice. Consult an attorney for your specific situation.</p>
+            <p class="copyright">&copy; <span id="current-year"></span> <span data-translate="footer_copyright">Know Your Rights App. All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
